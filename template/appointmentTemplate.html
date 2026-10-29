@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Appointment Request Confirmation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9fafb;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      background-color: #ffffff;
+      margin: 30px auto;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      max-width: 600px;
+    }
+    h2 {
+      color: #329290;
+    }
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #444444;
+    }
+    .footer {
+      margin-top: 30px;
+      font-size: 13px;
+      color: #999;
+    }
+    .details {
+      background-color: #f1f5f9;
+      padding: 15px;
+      border-radius: 6px;
+      margin-top: 20px;
+    }
+    .details strong {
+      display: inline-block;
+      width: 120px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>New Appointment Request</h2>
+    <p>Hello Admin,</p>
+    <p>You have received a new appointment request. Below are the details:</p>
+
+    <div class="details">
+      <p><strong>Name:</strong> {{name}}</p>
+      <p><strong>Email:</strong> {{email}}</p>
+      <p><strong>Phone:</strong> {{phone}}</p>
+      <p><strong>Description:</strong> {{description}}</p>
+      <!-- <p><strong>Date:</strong> {{created}}</p> -->
+    </div>
+
+    <p>Please follow up with the user as soon as possible.</p>
+
+    <div class="footer">
+      This message was sent automatically from the Aanandha Fertility Center Appointment System.
+    </div>
+  </div>
+</body>
+</html>
